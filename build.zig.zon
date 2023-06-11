@@ -1,0 +1,10 @@
+.{
+    .name = "spotify-adblock",
+    .version = "0.1.0",
+    .dependencies = .{
+        .ctregex = .{
+            .url = "https://github.com/usdogu/ctregex.zig/archive/7ac28f6db7952358af1145763addd411f8f90017.tar.gz",
+            .hash = "1220bbe8e72c0ca2a1c59c2ec9cd3281e2522bf18bf3cf066c5e1c1f73ed6340882f",
+        },
+    },
+}
