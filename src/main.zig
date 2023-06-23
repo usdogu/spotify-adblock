@@ -3,7 +3,7 @@ const ctregex = @import("ctregex");
 const cef = @import("cef.zig");
 
 const EAI_FAIL: i32 = -4;
-const RTLD_NEXT: *anyopaque = @intToPtr(*anyopaque, @bitCast(usize, @as(isize, -1)));
+const RTLD_NEXT: *anyopaque = @ptrFromInt(*anyopaque, @bitCast(usize, @as(isize, -1)));
 
 pub fn dlsym(comptime Type: type, comptime name: [:0]const u8) ?Type {
     const result = std.c.dlsym(RTLD_NEXT, name);
